@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Football</title>
+  <!-- Fancybox -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="../../build/css/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="../../build/css/bootstrap.css">
+  <link rel="stylesheet" href="../../build/css/selectize.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="../../build/css/style.css">
+</head>
+<body class="">
+    <div class="app">
+        <div class="header-wrapper">
+            <header>
+    <div class="container">
+        <div class="side-header">
+            <a href="/" class="logo">
+                <img src="../../build/img/logo.png" alt="">
+            </a>
+            <ul class="header-list">
+                <li>
+                    <a href="#">Клуб</a>
+                </li>
+                <li>
+                    <a href="#">Новости</a>
+                </li>
+                <li>
+                    <a href="#">Магазин</a>
+                </li>
+                <li class="drop-list">
+                    <a href="#">Матч-центр</a>
+                    <ul class="header-sublist1">
+                        <li class="drop-list">
+                            <a href="#">Календарь матчей</a>
+                            <ul class="header-sublist2">
+                                <li>
+                                    <a href="#">Пункт меню 2 вложенности</a>
+                                </li>
+                                <li>
+                                    <a href="#">Пункт меню 2 вложенности</a>
+                                </li>
+                                <li class="drop-list">
+                                    <a href="#">Пункт меню 2 вложенности</a>
+                                    <ul class="header-sublist2">
+                                        <li>
+                                            <a href="#">Пункт меню 3 вложенности</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Пункт меню 3 вложенности</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Пункт меню 3 вложенности</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Пункт меню 3 вложенности</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Пункт меню 3 вложенности</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Пункт меню 2 вложенности</a>
+                                </li>
+                                <li>
+                                    <a href="#">Пункт меню 2 вложенности</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Турирная таблица</a>
+                        </li>
+                        <li>
+                            <a href="#">Онлайн трансляции</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Бизнес</a>
+                </li>
+                <li class="drop-list">
+                    <a href="#">Контакты</a>
+                    <ul class="header-sublist1">
+                        <li class="drop-list">
+                            <a href="#">Календарь матчей</a>
+                            <ul class="header-sublist2">
+                                <li>
+                                    <a href="#">Пункт меню 2 вложенности</a>
+                                </li>
+                                <li>
+                                    <a href="#">Пункт меню 2 вложенности</a>
+                                </li>
+                                <li class="drop-list">
+                                    <a href="#">Пункт меню 2 вложенности</a>
+                                    <ul class="header-sublist2">
+                                        <li>
+                                            <a href="#">Пункт меню 3 вложенности</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Пункт меню 3 вложенности</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Пункт меню 3 вложенности</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Пункт меню 3 вложенности</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Пункт меню 3 вложенности</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Пункт меню 2 вложенности</a>
+                                </li>
+                                <li>
+                                    <a href="#">Пункт меню 2 вложенности</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Турирная таблица</a>
+                        </li>
+                        <li>
+                            <a href="#">Онлайн трансляции</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="side-header">
+            <div class="input-search-wrp">
+                <div class="search-btn search-general">
+                    <div class="search-btn-img">
+                        <img src="../../build/img/search.png" alt="">
+                    </div>
+                </div>
+                <div class="search-input-wrp">
+                    <input type="text" class="search-input" placeholder="Я ищу...">
+                    <div class="search-input-close"></div>
+                </div>
+                <div class="search-input-result">
+                    <ul>
+                        <li><a href="#">Введите запрос</a></li>
+                        <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi, ipsum lacus nec dictum sit vitae adipiscing a.</a></li>
+                        <li><a href="#">Integer posuere tincidunt sed pellentesque.</a></li>
+                        <li><a href="#">Justo est elementum dictum blandit id eget feugiat sociis. Sed sagittis, lacus, nec eros, dui est.</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="burger"><span></span></div>
+        </div>
+    </div>
+</header>
+
+        </div>
+        <div class="menu-wrapper">
+            <div class="menu">
+    <ul class="menu-list">
+        <li>
+            <a href="#">Клуб</a>
+        </li>
+        <li>
+            <a href="#">Новости</a>
+        </li>
+        <li>
+            <a href="#">Магазин</a>
+        </li>
+        <li class="sub1">
+            <a href="#">Матч-центр</a>
+            <ul>
+                <li class="sub2">
+                    <a href="#">Календарь матчей</a>
+                    <ul>
+                        <li><a href="#">Пункт меню 2 вложенности</a></li>
+                        <li><a href="#">Пункт меню 2 вложенности</a></li>
+                        <li class="sub3">
+                            <a href="#">Пункт меню 2 вложенности</a>
+                            <ul>
+                              <li><a href="#">Пункт меню 3 вложенности</a></li>
+                              <li><a href="#">Пункт меню 3 вложенности</a></li>
+                              <li><a href="#">Пункт меню 3 вложенности</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Турнирная таблица</a>
+                </li>
+                <li>
+                    <a href="#">Онлайн трансляции</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Бизнес</a>
+        </li>
+        <li class="sub1">
+            <a href="#">Контакты</a>
+            <ul>
+                <li class="sub2">
+                    <a href="#">Календарь матчей</a>
+                    <ul>
+                        <li><a href="#">Пункт меню 2 вложенности</a></li>
+                        <li><a href="#">Пункт меню 2 вложенности</a></li>
+                        <li class="sub3">
+                            <a href="#">Пункт меню 2 вложенности</a>
+                            <ul>
+                              <li><a href="#">Пункт меню 3 вложенности</a></li>
+                              <li><a href="#">Пункт меню 3 вложенности</a></li>
+                              <li><a href="#">Пункт меню 3 вложенности</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Турнирная таблица</a>
+                </li>
+                <li>
+                    <a href="#">Онлайн трансляции</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+        </div>
+        <div class="search-mob-wrapper">
+            <div class="search">
+    <div class="search-input-wrp-mob">
+        <img src="../../build/img/search.png" alt="" class="search-mob">
+        <input type="text" class="search-input-mob" placeholder="Я ищу...">
+        <div class="btn-mob-search-close"></div>
+    </div>
+    <div class="search-input-result-mob">
+        <ul>
+            <li><a href="#">Введите запрос</a></li>
+            <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi, ipsum lacus nec dictum sit vitae adipiscing a.</a></li>
+            <li><a href="#">Integer posuere tincidunt sed pellentesque.</a></li>
+            <li><a href="#">Justo est elementum dictum blandit id eget feugiat sociis. Sed sagittis, lacus, nec eros, dui est.</a></li>
+        </ul>
+    </div>
+</div>
+
+        </div>
+        <div class="pages-wrapper">
+            <div class="matchCenter-page">
+    <section class="trans1">
+        <div class="trans-overlay"></div>
+        <div class="container">
+            <img src="../../build/img/emblema3.png" alt="">
+            <h2>Матч-центр</h2>
+            <ul class="breadcrumbs-my">
+                <li>
+                    <a href="/">главная</a>
+                </li>
+                <li>
+                    <a href="#">Матч-центр</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <div class="matchCenter-content">
+        <div class="container">
+            <div class="match-slider-wrp">
+                <div class="match-slider">
+                    <div>
+                        <div class="match-slide">
+                            <div class="match-slide-top">
+                                <p class="match-slide-data">20 июня 2020, 16:30</p>
+                                <p class="match-slide-name">Тинькофф Российская Премьер&#8209;Лига</p>
+                                <p class="match-slide-tour">Тур: 23</p>
+                                <div class="schet-wrp">
+                                    <div class="schet-commanda">
+                                        <div class="schet-img">
+                                            <img src="../../build/img/label-commanda1.png" alt="">
+                                        </div>
+                                        <p>Арсенал</p>
+                                    </div>
+                                    <div class="schet">3:2</div>
+                                    <div class="schet-commanda">
+                                        <div class="schet-img">
+                                            <img src="../../build/img/label-commanda2.png" alt="">
+                                        </div>
+                                        <p>Спартак</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match-slide-bottom">
+                                <span class="start">Завершен</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="match-slide">
+                            <div class="match-slide-top">
+                                <p class="match-slide-data">20 июня 2020, 16:30</p>
+                                <p class="match-slide-name">Тинькофф Российская Премьер&#8209;Лига</p>
+                                <p class="match-slide-tour">-</p>
+                                <div class="schet-wrp">
+                                    <div class="schet-commanda">
+                                        <div class="schet-img">
+                                            <img src="../../build/img/label-commanda1.png" alt="">
+                                        </div>
+                                        <p>Арсенал</p>
+                                    </div>
+                                    <div class="schet">-</div>
+                                    <div class="schet-commanda">
+                                        <div class="schet-img">
+                                            <img src="../../build/img/label-commanda2.png" alt="">
+                                        </div>
+                                        <p>Спартак</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match-slide-bottom">
+                                <span class="start">До начала:</span>
+                                <div class="start-time-wrp">
+                                    <span class="start-time">03</span>
+                                    <span>дн.</span>
+                                    <span class="start-time">23</span>
+                                    <span>ч.</span>
+                                    <span class="start-time">57</span>
+                                    <span>мин.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="match-slide">
+                            <div class="match-slide-top">
+                                <p class="match-slide-data">20 июня 2020, 16:30</p>
+                                <p class="match-slide-name">Тинькофф Российская Премьер&#8209;Лига</p>
+                                <p class="match-slide-tour">Тур: 23</p>
+                                <div class="schet-wrp">
+                                    <div class="schet-commanda">
+                                        <div class="schet-img">
+                                            <img src="../../build/img/label-commanda1.png" alt="">
+                                        </div>
+                                        <p>Арсенал</p>
+                                    </div>
+                                    <div class="schet">3:2</div>
+                                    <div class="schet-commanda">
+                                        <div class="schet-img">
+                                            <img src="../../build/img/label-commanda2.png" alt="">
+                                        </div>
+                                        <p>Арсенал</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match-slide-bottom">
+                                <span class="start">До начала:</span>
+                                <div class="start-time-wrp">
+                                    <span class="start-time">03</span>
+                                    <span>дн.</span>
+                                    <span class="start-time">23</span>
+                                    <span>ч.</span>
+                                    <span class="start-time">57</span>
+                                    <span>мин.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="match-slide">
+                            <div class="match-slide-top">
+                                <p class="match-slide-data">20 июня 2020, 16:30</p>
+                                <p class="match-slide-name">Тинькофф Российская Премьер&#8209;Лига</p>
+                                <p class="match-slide-tour">Тур: 23</p>
+                                <div class="schet-wrp">
+                                    <div class="schet-commanda">
+                                        <div class="schet-img">
+                                            <img src="../../build/img/label-commanda1.png" alt="">
+                                        </div>
+                                        <p>Арсенал</p>
+                                    </div>
+                                    <div class="schet">3:2</div>
+                                    <div class="schet-commanda">
+                                        <div class="schet-img">
+                                            <img src="../../build/img/label-commanda2.png" alt="">
+                                        </div>
+                                        <p>Арсенал</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match-slide-bottom">
+                                <span class="start">До начала:</span>
+                                <div class="start-time-wrp">
+                                    <span class="start-time">03</span>
+                                    <span>дн.</span>
+                                    <span class="start-time">23</span>
+                                    <span>ч.</span>
+                                    <span class="start-time">57</span>
+                                    <span>мин.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="prev-match-arrow match-arrow">
+                    <img src="../../build/img/arr-left-slider.png" alt="">
+                </div>
+                <div class="next-match-arrow match-arrow">
+                    <img src="../../build/img/arr-right-slider.png" alt="">
+                </div>
+            </div>
+            <div class="match-perehod">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <a href="#" class="match-perehod-block">
+                            <img src="../../build/img/becoach.png" alt="">
+                            <p>Календарь матчей</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <a href="#" class="match-perehod-block">
+                            <img src="../../build/img/becoach2.png" alt="">
+                            <p>Турнирная таблица</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <a href="#" class="match-perehod-block">
+                            <img src="../../build/img/becoach3.png" alt="">
+                            <p>Онлайн трансляция</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+        <div class="footer-wrapper">
+            <footer>
+    <div class="footer-top">
+        <div class="container">
+            <div class="side-header">
+                <a href="/" class="logo">
+                    <img src="../../build/img/logo.png" alt="">
+                </a>
+                <ul class="header-list">
+                    <li>
+                        <a href="#">Клуб</a>
+                    </li>
+                    <li>
+                        <a href="#">Новости</a>
+                    </li>
+                    <li>
+                        <a href="#">Магазин</a>
+                    </li>
+                    <li>
+                        <a href="#">Матч-центр</a>
+                    </li>
+                    <li>
+                        <a href="#">Бизнес</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="footer-acc">
+                <li>
+                    <a href="#">
+                        <img src="../../build/img/youtube.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../../build/img/instagram.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="side-footer">
+                <p>Официальный сайт футбольного клуба «Спартак» Москва. Самый титулованный футбольный клуб России.</p>
+                <p>Основан в 1922 году. © spartak.com 2017-2020 18+</p>
+            </div>
+            <div class="side-footer">
+                <a href="/policy" class="policy-footer">Правовая информация</a>
+                <p>Сделано в <a href="https://simplexx.agency/" class="copyright">Simplexx</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        </div>
+        <div class="pop-up-overlay-wrapper">
+            <div class="overlay-pop-up"></div>
+            <div id="reminder" class="pop-up-general-block">
+    <p class="pop-title">Получите напоминание о матче</p>
+    <p>На указанный e-mail вам придет уведомление за день до матча, в день матча и за час до события</p>
+    <form id="valid2" action="">
+        <div class="input-style">
+            <input class="pop-up-input input-valid" type="text" data-input="name" name="name" value="" placeholder="Имя">
+            <p class="input-error">Ошибка ввода</p>
+        </div>
+        <div class="input-style">
+            <input class="pop-up-input input-valid" type="email" data-input="email" name="email" value="" placeholder="E-mail">
+            <p class="input-error">Ошибка ввода</p>
+        </div>
+        <div class="input-style">
+            <input class="pop-up-input input-valid mask-phone" type="tel" data-input="phone" name="phone" value="" placeholder="+7 (___) ___-__-__">
+            <p class="input-error">Ошибка ввода</p>
+        </div>
+        <div class="btn-checkbox-wrp">
+            <label class="checkbox">
+            	<input class="checkbox-check" type="checkbox" />
+            	<div class="checkbox__text"><span>Я соглашаюсь с </span><a href="/policy">Политикой конфиденциальности</a></div>
+            </label>
+            <input type="submit" class="pop-up-btn btn-4-checkbox btn-4-checkbox-disabled" name="" value="Отправить">
+        </div>
+    </form>
+    <div class="pop-up-general-block-close-btn"></div>
+</div>
+
+<!-- <div id="success">
+    <h2>Спасибо!</h2>
+    <p>Наш консультант свяжется с&nbsp;Вами в&nbsp;течение 10 минут</p>
+    <a href="/" class="pop-up-btn">Вернуться на главную</a>
+    <div class="pop-up-general-block-close-btn"></div>
+</div> -->
+
+        </div>
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../../build/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="../../build/js/jquery-ui.js"></script>
+    <script src="../../build/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../../build/js/jquery.maskedinput.min.js"></script>
+    <script src="https://unpkg.com/vh-check/dist/vh-check.min.js"></script>
+    <script src="../../build/js/selectize.js"></script>
+    <script src="../../build/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../../build/js/main.js"></script>
+    <script type="text/javascript">
+        function validation (a) {
+            var form = $(a);
+            var url = form.attr('action');
+            var method = form.attr('method');
+            var error = 0;
+
+            $(form).find('.input-valid').each(function() {
+                    var str = $(this).val();
+                    var value = $.trim(str);
+
+                    if($(this).hasClass('optional')) {
+                        return true;
+                    } else {
+                        if(!value){
+                            $(this).closest('.input-style').addClass('error');
+                            $(this).siblings('.input-error').html('заполните поле');
+                            error = 1;
+                        }
+                        else {
+                            var str_length = value.length;
+                            if($(this).attr('data-input') == 'name'){
+                                if(str_length < 2 || str_length > 36){
+                                    error = 1;
+                                    $(this).closest('.input-style').addClass('error');
+                                }
+                                else {
+                                    var regex = new RegExp(/^[а-яА-ЯёЁa-zA-Z\s]*$/);
+                                    if(regex.test(value) == false) {
+                                        error = 1;
+                                        $(this).closest('.input-style').addClass('error');
+                                        $(this).siblings('.input-error').html('вводите только буквы');
+                                    }
+                                    else{
+                                        $(this).closest('.input-style').removeClass('error');
+                                    }
+                                }
+                            }
+                            if($(this).attr('data-input') == 'email'){
+                                if(str_length < 3 || str_length > 64){
+                                    error = 1;
+                                    $(this).closest('.input-style').addClass('error');
+                                }
+                                else {
+                                    var regex = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+                                    if(regex.test(value) == false) {
+                                        error = 1;
+                                        $(this).closest('.input-style').addClass('error');
+                                        $(this).siblings('.input-error').html('неверный формат email');
+                                    }
+                                    else{
+                                        $(this).closest('.input-style').removeClass('error');
+                                    }
+                                }
+                            }
+                            if($(this).attr('data-input') == 'age'){
+                                if(str_length < 1 || str_length > 3){
+                                    error = 1;
+                                    $(this).closest('.input-style').addClass('error');
+                                }
+                                else {
+                                    var regex = /^[0-9]*$/;
+                                    if(regex.test(value) == false) {
+                                        error = 1;
+                                        $(this).closest('.input-style').addClass('error');
+                                    }
+                                    else{
+                                        var age = Number(value);
+                                        if(age < 16 || age > 125){
+                                            error = 1;
+                                            $(this).closest('.input-style').addClass('error');
+                                        }
+                                        else{
+                                            $(this).closest('.input-style').removeClass('error');
+                                        }
+                                    }
+                                }
+                            }
+                            if($(this).attr('data-input') == 'count'){
+                                if(str_length < 1 || str_length > 12){
+                                    error = 1;
+                                    $(this).closest('.input-style').addClass('error');
+                                }
+                                else {
+                                    var regex = /^(?!0.*$)([0-9]{1,12})$/;
+                                    if(regex.test(value) == false) {
+                                        error = 1;
+                                        $(this).closest('.input-style').addClass('error');
+                                    }
+                                    else{
+                                        $(this).closest('.input-style').removeClass('error');
+                                    }
+                                }
+                            }
+                            if($(this).attr('data-input') == 'phone'){
+                                if(str_length < 10 || str_length > 20){
+                                    error = 1;
+                                    $(this).closest('.input-style').addClass('error');
+                                    $(this).siblings('.input-error').html('неверный формат телефона');
+                                }
+                                else {
+                                    var regex = new RegExp(/^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/);
+                                    if (regex.test(value) == false) {
+                                        $(this).closest('.input-style').addClass('error');
+                                        $(this).siblings('.input-error').html('неверный формат телефона');
+                                        error = 1;
+                                    }
+                                    else {
+                                      $(this).closest('.input-style').removeClass('error');
+                                    }
+                                }
+                            }
+                            if($(this).attr('data-input') == 'social_link'){
+                                if(str_length < 10 || str_length > 80){
+                                    error = 1;
+                                    $(this).closest('.input-style').addClass('error');
+                                }
+                                else {
+                                    var regex = new RegExp(/^(http|https|ftp):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/i);
+                                    if(regex.test(value) == false) {
+                                        error = 1;
+                                        $(this).closest('.input-style').addClass('error');
+                                    }
+                                    else{
+                                        $(this).closest('.input-style').removeClass('error');
+                                    }
+                                }
+                            }
+                            if($(this).attr('data-input') == 'birthday'){
+                                if(str_length !== 10){
+                                    error = 1;
+                                    $(this).closest('.input-style').addClass('error');
+                                }
+                                else {
+                                    var regex = new RegExp(/^(?:(?:31(\/|-|\.)(?:0?[13578]|1[02]))\1|(?:(?:29|30)(\/|-|\.)(?:0?[1,3-9]|1[0-2])\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:29(\/|-|\.)0?2\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\d|2[0-8])(\/|-|\.)(?:(?:0?[1-9])|(?:1[0-2]))\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$/);
+                                    if(regex.test(value) == false) {
+                                        error = 1;
+                                        $(this).closest('.input-style').addClass('error');
+                                    }
+                                    else{
+                                        $(this).closest('.input-style').removeClass('error');
+                                    }
+                                }
+                            }
+                            if($(this).attr('data-input') == 'password'){
+                                if(str_length < 8 || str_length > 24){
+                                    error = 1;
+                                    $(this).closest('.input-style').addClass('error');
+                                }
+                                else {
+                                    var regex = new RegExp(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=(.*[a-zA-Z]){4}).{8,20}$/i);
+                                    if(regex.test(value) == false) {
+                                        error = 1;
+                                        $(this).closest('.input-style').addClass('error');
+                                    }
+                                    else{
+                                        $(this).closest('.input-style').removeClass('error');
+                                    }
+                                }
+                            }
+                        }
+                    }
+               });
+            if(error) {
+                return 1
+            } else {
+                return 0;
+              };
+        };
+    </script>
+</body>
+</html>

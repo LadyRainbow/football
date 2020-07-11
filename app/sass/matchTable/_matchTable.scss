@@ -1,0 +1,22 @@
+.matchTable-page {
+    background-color: #EAF0F8;
+    .trans1 > img {
+        object-position: top;
+        transform: none;
+    }
+    .table-general {
+        margin-bottom: 0;
+        tr {
+            display: table-row;
+        }
+    }
+}
+.matchTable-content {
+    padding-top: 64px;
+    padding-bottom: 112px;
+}
+@media (max-width: 767px) {
+    .matchTable-content {
+        padding-bottom: 82px;
+    }
+}

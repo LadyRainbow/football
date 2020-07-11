@@ -1,0 +1,44 @@
+.matchData-page {
+    background-color: #EAF0F8;
+    .trans1 > img {
+        object-position: top;
+    }
+    .table-general {
+        margin-bottom: 0;
+        tr {
+            display: table-row;
+        }
+    }
+}
+.matchData-content {
+    padding-top: 64px;
+    padding-bottom: 112px;
+}
+// .ui-datepicker-inline {
+//     width: 100%;
+// }
+// .ui-state-default  {
+//     background-image: url('../img/logo.png');
+// }
+// .ui-widget-content a {
+//     height: 114px;
+// }
+// .ui-datepicker th {
+//     text-align: left;
+// }
+// .ui-datepicker td span, .ui-datepicker td a {
+//     text-align: left;
+// }
+// .Highlighted a{
+//    background-color : Green !important;
+//    background-image :none !important;
+//    color: White !important;
+//    font-weight:bold !important;
+//    font-size: 12pt;
+// }
+
+@media (max-width: 767px) {
+    .matchData-content {
+        padding-bottom: 82px;
+    }
+}

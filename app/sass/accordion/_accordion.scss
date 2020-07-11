@@ -1,0 +1,92 @@
+.menu-list {
+    width: 100%;
+    color: #fff;
+    padding-top: 14px;
+    ul {
+        display:none;
+        list-style: none;
+        margin: 0;
+        padding:0;
+    }
+    li {
+        &.sub1, &.sub2, &.sub3 {
+            & > a {
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 10px;
+                    height: 10px;
+                    background: url('../img/app-arr.png') center no-repeat;
+                    background-size: contain;
+                    transform: rotate(180deg);
+                    margin-left: 10px;
+                }
+                &.active {
+                    &::after {
+                        transform: rotate(0deg);
+                    }
+                }
+            }
+        }
+    }
+    & > li {
+        & > a {
+            & + ul {
+                padding-top: 10px;
+            }
+        }
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: 'proximanovacond-semibold', sans-serif;
+            position: relative;
+            line-height: 19px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 14px 25px 14px 14px;
+            & + ul {
+                & > li {
+                    & > a {
+                        text-transform: none;
+                        font-family: 'Roboto', sans-serif;
+                        line-height: 24px;
+                        & + ul {
+                            & > li {
+                                & > a {
+                                    padding: 7px 25px 7px 31px;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                        &.active {
+                            color: #EAF0F8;
+                            background-color: #002D66;
+                            & + ul {
+                                background-color: #002D66;
+                                padding-bottom: 10px;
+                                & > li {
+                                    & > a {
+                                        &.active {
+                                            color: #fff;
+                                            background-color: #00214A;
+                                            & + ul {
+                                                background-color: #00214A;
+                                                padding-bottom: 10px;
+                                                li {
+                                                    a {
+                                                        padding: 7px 25px 7px 57px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
